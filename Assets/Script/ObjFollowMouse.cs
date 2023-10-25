@@ -14,7 +14,7 @@ public class ObjFollowMouse : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetMouseButtonUp(0))
+        if(!isOnGrid)
         {
             transform.position = placeObjectOnGrid.smoothMousePos + new Vector3(0, 0.5f, 0);
         }
